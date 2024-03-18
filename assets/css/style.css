@@ -5,6 +5,7 @@
     border: 0;
     font-family: "Open Sans", sans-serif;
     font-style: normal;
+    color: white;
     }
 
 body {
@@ -12,14 +13,24 @@ body {
 }
 
 h2 {
-    color: #ffffff;
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
+
 .icons, .card, footer{
-    background-color: rgb(92, 224, 239);
+    background-color: rgb(1, 49, 1);
     margin-top: 2rem;
 
+}
+
+.icons {
+    text-align: center;
+    font-size: 25px;
+}
+
+.card img {
+    height: 200px;
+    text-align: center;
 }
