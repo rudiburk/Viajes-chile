@@ -15,4 +15,11 @@ h2 {
     color: #ffffff;
     text-align: center;
     padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.icons, .card, footer{
+    background-color: rgb(92, 224, 239);
+    margin-top: 2rem;
+
 }
