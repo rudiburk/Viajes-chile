@@ -8,6 +8,10 @@
     color: white;
     }
 
+html {
+        scroll-behavior: smooth;
+    }
+
 body {
     background-color: #000000;
 }
@@ -20,7 +24,7 @@ h2 {
 
 
 .icons, .card, footer{
-    background-color: rgb(1, 49, 1);
+    background-color: rgb(36, 175, 203);
     margin-top: 2rem;
 
 }
@@ -28,9 +32,30 @@ h2 {
 .icons {
     text-align: center;
     font-size: 25px;
+    
 }
 
 .card img {
     height: 200px;
     text-align: center;
+}
+
+.icons-footer {
+    text-align: end ;
+    font-size: 25px;
+    
+}
+
+footer{
+    padding-top: 15px;
+    height: 70px;
+}
+
+.footer-text {
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.icons-footer {
+    background-color: rgb(36, 175, 203);;
 }
