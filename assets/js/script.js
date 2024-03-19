@@ -3,17 +3,20 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]'). tooltip();
         });
 
-document.addEventListener("DOMContentLoaded", function() {
-        document.querySelectorAll('.nav-link').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetSection = document.getElementById(targetId);
-                if (targetSection) {
-                    targetSection.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
+
+    document.addEventListener("DOMContentLoaded", makeLinksSmooth);
+    function makeLinksSmooth() { 
+        const navLinks = document.querySelectorAll("nav-item a"); 
+        navLinks.forEach((link) => {
+            link.addEventListener("click", smoothScroll);
         });
-    });
+        }
+    function smoothScroll(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href");
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) { 
+            targetElement.scrollIntoView({ behavior: "smooth", });
+        }
+        }
+    targetElement.scrollIntoView({ behavior: "smooth", block: "end" }); 
